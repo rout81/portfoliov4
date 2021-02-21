@@ -300,7 +300,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="project_image">
-                    <img src="/magicai.gif" width="80%" />
+                    <img src="/magicai.webp" width="80%" />
                   </div>
                 </motion.div>
               </div>
@@ -341,7 +341,7 @@ export default function Home() {
                   animate={dis ? { x: 0 } : null}
                   className="project_image"
                 >
-                  <img src="/dismovies.gif" width="80%" />
+                  <img src="/dismovies.webp" width="80%" />
                 </motion.div>
               </div>
             </VisibilitySensor>
@@ -381,7 +381,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="project_image">
-                    <img src="/hotncold.gif" width="80%" />
+                    <img src="/hotncold.webp" width="80%" />
                   </div>
                 </motion.div>
               </div>
