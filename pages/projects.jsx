@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
-import Button from "../component/Button";
 import styles from "../styles/Home.module.css";
 import ProjectData from "../component/projectData";
 import ProjectRow from "../component/ProjectRow";
@@ -9,6 +9,21 @@ import ProjectRow from "../component/ProjectRow";
 const Projects = () => {
   return (
     <div id="top">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta
+          name="keywords"
+          content="satanrout, satyaranjan rout, bhuinpur, odisha, satyaranjan rout web developer, javascript, react.js, node.js, web developer, projects"
+        />
+        <meta
+          name="description"
+          content="Projects of Satyaranjan Rout aka satanrout"
+        />
+        <meta name="author" content="Satyaranjan Rout"></meta>
+        <title>Projects | Satyaranjan Rout</title>
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <motion.a
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
