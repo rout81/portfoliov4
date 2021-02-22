@@ -151,6 +151,7 @@ footer p {
   margin-top: 0;
   font-size: 13px;
   color: grey;
+  text-align: center;
 }
 
 .back {
@@ -234,7 +235,7 @@ footer p {
     padding: 5px 10px;
   }
   .contact_left {
-    transform: none;
+    transform: none !important;
     margin-top: 50px;
   }
 }
