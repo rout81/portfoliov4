@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Button from "./Button";
 
 const ProjectRow = ({ data }) => {
@@ -24,7 +25,7 @@ const ProjectRow = ({ data }) => {
         </span>
       </div>
       <div className="project_image">
-        <img alt={name} src={image} width="80%" />
+        <Image alt={name} src={image} width="541" height="277" />
       </div>
     </div>
   );

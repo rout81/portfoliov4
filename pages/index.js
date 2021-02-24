@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Skill from "../component/Skill";
@@ -300,7 +301,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="project_image">
-                    <img src="/magicai.webp" width="80%" />
+                    <Image width="541" height="277" src="/magicai.webp" />
                   </div>
                 </motion.div>
               </div>
@@ -341,7 +342,7 @@ export default function Home() {
                   animate={dis ? { x: 0 } : null}
                   className="project_image"
                 >
-                  <img src="/dismovies.webp" width="80%" />
+                  <Image width="541" height="277" src="/dismovies.webp" />
                 </motion.div>
               </div>
             </VisibilitySensor>
@@ -381,7 +382,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="project_image">
-                    <img src="/hotncold.webp" width="80%" />
+                    <Image width="541" height="277" src="/hotncold.webp" />
                   </div>
                 </motion.div>
               </div>
