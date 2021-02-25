@@ -25,7 +25,13 @@ const ProjectRow = ({ data }) => {
         </span>
       </div>
       <div className="project_image">
-        <Image alt={name} src={image} width="541" height="277" />
+        <Image
+          unoptimized={true}
+          alt={name}
+          src={image}
+          width="541"
+          height="277"
+        />
       </div>
     </div>
   );
