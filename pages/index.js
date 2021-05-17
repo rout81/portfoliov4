@@ -277,12 +277,12 @@ export default function Home() {
                   className="project"
                 >
                   <div className="project_left">
-                    <h3>Magic AI</h3>
+                    <h3>PlaneBazaar</h3>
                     <p>
-                      It's a face-recognition app. It uses Machine learning to
-                      predict the name of the celebrity by their image.
+                      SaaS product from indiplanes to make buying and selling of
+                      plane parts easier.
                     </p>
-                    <a href="https://magicai.netlify.app/" target="_blank">
+                    <a href="https://planebazaar.com/" target="_blank">
                       <Button>See Live</Button>
                     </a>
                     <span
@@ -292,12 +292,7 @@ export default function Home() {
                         cursor: "pointer",
                       }}
                     >
-                      <a
-                        href="https://github.com/satanrout/face-recognition"
-                        target="_blank"
-                      >
-                        Source Code
-                      </a>
+                      <a href="#">Proprietary</a>
                     </span>
                   </div>
                   <div className="project_image">
@@ -305,7 +300,7 @@ export default function Home() {
                       unoptimized={true}
                       width="541"
                       height="277"
-                      src="/magicai.webp"
+                      src="/planebazar.webp"
                     />
                   </div>
                 </motion.div>
@@ -322,9 +317,9 @@ export default function Home() {
                   animate={dis ? { x: 0 } : null}
                   className="project_left"
                 >
-                  <h3>DISMOVIES</h3>
-                  <p>Discover and get recommendation of movies.</p>
-                  <a href="https://dismovies.netlify.app/" target="_blank">
+                  <h3>ShopHop</h3>
+                  <p>Full Ecommerce Project with all the best technologies.</p>
+                  <a href="https://shophop.netlify.app/" target="_blank">
                     <Button>See Live</Button>
                   </a>
                   <span
@@ -335,7 +330,7 @@ export default function Home() {
                     }}
                   >
                     <a
-                      href="https://github.com/satanrout/movie-info"
+                      href="https://github.com/satanrout/shophop"
                       target="_blank"
                     >
                       Source Code
@@ -351,7 +346,7 @@ export default function Home() {
                     unoptimized={true}
                     width="541"
                     height="277"
-                    src="/dismovies.webp"
+                    src="/shophop.webp"
                   />
                 </motion.div>
               </div>
@@ -368,12 +363,9 @@ export default function Home() {
                   className="project"
                 >
                   <div className="project_left">
-                    <h3>Hot&Cold</h3>
-                    <p>
-                      It's a weather app to show weather forecast for the next
-                      5days.
-                    </p>
-                    <a href="https://hotncold.netlify.app/" target="_blank">
+                    <h3>DISMOVIES</h3>
+                    <p>Discover and get recommendation of movies.</p>
+                    <a href="https://dismovies.netlify.app/" target="_blank">
                       <Button>See Live</Button>
                     </a>
                     <span
@@ -384,7 +376,7 @@ export default function Home() {
                       }}
                     >
                       <a
-                        href="https://github.com/satanrout/weather-project"
+                        href="https://github.com/satanrout/movie-info"
                         target="_blank"
                       >
                         Source Code
@@ -396,7 +388,7 @@ export default function Home() {
                       unoptimized={true}
                       width="541"
                       height="277"
-                      src="/hotncold.webp"
+                      src="/dismovies.webp"
                     />
                   </div>
                 </motion.div>

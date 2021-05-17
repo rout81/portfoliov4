@@ -1,12 +1,20 @@
 const ProjectData = [
-  // {
-  //   name: "ShopHop",
-  //   info: "Full Ecommerce Project with all the best technologies",
-  //   live: "https://shophop.netlify.app/",
-  //   code: "https://github.com/satanrout/shophop",
-  //   image: "/magicai.webp",
-  //   id: 11,
-  // },
+  {
+    name: "PlaneBazaar",
+    info: "SaaS product from indiplanes to make buying and selling of plane parts easier.",
+    live: "https://planebazaar.com/",
+    code: "https://github.com/satanrout/planebazar",
+    image: "/planebazar.webp",
+    id: 11,
+  },
+  {
+    name: "ShopHop",
+    info: "Full Ecommerce Project with all the best technologies",
+    live: "https://shophop.netlify.app/",
+    code: "https://github.com/satanrout/shophop",
+    image: "/shophop.webp",
+    id: 11,
+  },
   {
     name: "Magic AI",
     info: "It's a face-recognition app. It uses Machine learning to predict the name of the celebrity by their image.",
