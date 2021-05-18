@@ -298,6 +298,7 @@ export default function Home() {
                   <div className="project_image">
                     <Image
                       unoptimized={true}
+                      priority={true}
                       width="541"
                       height="277"
                       src="/planebazar.webp"
@@ -346,6 +347,7 @@ export default function Home() {
                     unoptimized={true}
                     width="541"
                     height="277"
+                    priority={true}
                     src="/shophop.webp"
                   />
                 </motion.div>
@@ -387,6 +389,7 @@ export default function Home() {
                     <Image
                       unoptimized={true}
                       width="541"
+                      priority={true}
                       height="277"
                       src="/dismovies.webp"
                     />
