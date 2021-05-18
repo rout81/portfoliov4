@@ -7,6 +7,8 @@ import Button from "../component/Button";
 import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
 import emailjs from "emailjs-com";
+import ProjectData from "../component/projectData";
+import ProjectRow from "../component/ProjectRow";
 
 export default function Home() {
   const [aboutVisibility, setAboutVisibility] = useState(false);
@@ -257,6 +259,7 @@ export default function Home() {
         </section>
 
         {/* PROJECT SECTION */}
+
         <section
           style={{ backgroundColor: "#fff" }}
           className={styles.section}
@@ -264,139 +267,52 @@ export default function Home() {
         >
           <div className={`${styles.section_content} projects_container`}>
             <h2 style={{ color: "#272341" }}>PROJECTS</h2>
-            <VisibilitySensor
-              partialVisibility={true}
-              minTopValue={200}
-              partialVisibility={true}
-              onChange={(isVisible) => setMagic(isVisible)}
-            >
-              <div>
-                <motion.div
-                  initial={{ y: -400 }}
-                  animate={magic ? { y: 0 } : null}
-                  className="project"
-                >
-                  <div className="project_left">
-                    <h3>PlaneBazaar</h3>
-                    <p>
-                      SaaS product from indiplanes to make buying and selling of
-                      plane parts easier.
-                    </p>
-                    <a href="https://planebazaar.com/" target="_blank">
-                      <Button>See Live</Button>
-                    </a>
-                    <span
-                      style={{
-                        color: "#6dd5ed",
-                        fontWeight: "bold",
-                        cursor: "pointer",
-                      }}
-                    >
-                      <a href="#">Proprietary</a>
-                    </span>
-                  </div>
-                  <div className="project_image">
-                    <Image
-                      unoptimized={true}
-                      priority={true}
-                      width="541"
-                      height="277"
-                      src="/planebazar.webp"
-                    />
-                  </div>
-                </motion.div>
-              </div>
-            </VisibilitySensor>
-            <VisibilitySensor
-              minTopValue={200}
-              partialVisibility={true}
-              onChange={(isVisible) => setDis(isVisible)}
-            >
-              <div className="project">
-                <motion.div
-                  initial={{ x: "-100vw" }}
-                  animate={dis ? { x: 0 } : null}
-                  className="project_left"
-                >
-                  <h3>ShopHop</h3>
-                  <p>Full Ecommerce Project with all the best technologies.</p>
-                  <a href="https://shophop.netlify.app/" target="_blank">
-                    <Button>See Live</Button>
-                  </a>
-                  <span
-                    style={{
-                      color: "#6dd5ed",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <a
-                      href="https://github.com/satanrout/shophop"
-                      target="_blank"
-                    >
-                      Source Code
-                    </a>
-                  </span>
-                </motion.div>
-                <motion.div
-                  initial={{ x: "100vw" }}
-                  animate={dis ? { x: 0 } : null}
-                  className="project_image"
-                >
-                  <Image
-                    unoptimized={true}
-                    width="541"
-                    height="277"
-                    priority={true}
-                    src="/shophop.webp"
-                  />
-                </motion.div>
-              </div>
-            </VisibilitySensor>
-            <VisibilitySensor
-              minTopValue={200}
-              partialVisibility={true}
-              onChange={(isVisible) => setHot(isVisible)}
-            >
-              <div>
-                <motion.div
-                  initial={{ y: "100vh" }}
-                  animate={hot ? { y: 0 } : null}
-                  className="project"
-                >
-                  <div className="project_left">
-                    <h3>DISMOVIES</h3>
-                    <p>Discover and get recommendation of movies.</p>
-                    <a href="https://dismovies.netlify.app/" target="_blank">
-                      <Button>See Live</Button>
-                    </a>
-                    <span
-                      style={{
-                        color: "#6dd5ed",
-                        fontWeight: "bold",
-                        cursor: "pointer",
-                      }}
-                    >
-                      <a
-                        href="https://github.com/satanrout/movie-info"
-                        target="_blank"
-                      >
-                        Source Code
+
+            {ProjectData.slice(0, 4).map((project) => (
+              <div key={project.id}>
+                <div>
+                  <div className="project">
+                    <div className="project_left">
+                      <h3>{project.name}</h3>
+                      <p>{project.info}</p>
+                      <a href={project.live} target="_blank">
+                        <Button>See Live</Button>
                       </a>
-                    </span>
+                      <span
+                        style={{
+                          color: "#6dd5ed",
+                          fontWeight: "bold",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <a
+                          style={
+                            project.isProprietary
+                              ? { pointerEvents: "none", opacity: "0.6" }
+                              : null
+                          }
+                          href="#"
+                        >
+                          {project.isProprietary
+                            ? "Proprietary"
+                            : "Source Code"}
+                        </a>
+                      </span>
+                    </div>
+                    <div className="project_image">
+                      <Image
+                        unoptimized={true}
+                        priority={true}
+                        width="541"
+                        height="277"
+                        src={project.image}
+                      />
+                    </div>
                   </div>
-                  <div className="project_image">
-                    <Image
-                      unoptimized={true}
-                      width="541"
-                      priority={true}
-                      height="277"
-                      src="/dismovies.webp"
-                    />
-                  </div>
-                </motion.div>
+                </div>
               </div>
-            </VisibilitySensor>
+            ))}
+
             <div className="more-btn">
               <a href="/projects">
                 <Button>MORE</Button>

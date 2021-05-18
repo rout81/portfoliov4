@@ -5,7 +5,8 @@ const ProjectData = [
     live: "https://planebazaar.com/",
     code: "https://github.com/satanrout/planebazar",
     image: "/planebazar.webp",
-    id: 11,
+    isProprietary: true,
+    id: 12,
   },
   {
     name: "ShopHop",
